@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webJar</title>
+    <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+    <script src="webjars/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <style>
+        div{
+            background-color:antiquewhite;
+            width:100px;
+            border:1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div id="block">jquery</div>
+    <button type="button" class="btn btn-primary" onclick="btnHandler()">effect</button>
+    <script !src="">
+        function btnHandler(){
+            $("#block").animate({
+                width:"70%",
+                opacity:0.4,
+                marginLeft:"0.6in",
+                fontSize:"3em",
+                borderWidth:"10px"
+            },"15");
+        }
+    </script>
+</body>
+</html>
